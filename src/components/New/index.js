@@ -1,5 +1,5 @@
 import React from 'react';
-import { MyContainer, StyleNew, MyDivider } from './styles';
+import { MyContainer, StyleNew } from './styles';
 
 export const New = ({ value, onclick }) => {
   return (
@@ -8,7 +8,6 @@ export const New = ({ value, onclick }) => {
         <h2>{value?.title}</h2>
         <p>{value?.abstract}</p>
       </StyleNew>
-      <MyDivider />
     </MyContainer>
   );
 };

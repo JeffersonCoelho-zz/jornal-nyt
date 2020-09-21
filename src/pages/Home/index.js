@@ -1,7 +1,7 @@
-import { Container } from '@material-ui/core';
 import React, { useEffect, useState } from 'react';
 import { Header } from '../../components/Header';
 import { MyList } from '../../components/List';
+import { MyLoading } from '../../components/Loading';
 import api from '../../services/api';
 
 export default function Home() {
@@ -33,12 +33,8 @@ export default function Home() {
     getNews();
   }, []);
 
-  const LabelCustom = ({ text }) => {
-    return <label>{text}</label>;
-  };
-
   return loading ? (
-    <LabelCustom text={'Carregando...'} />
+    <MyLoading />
   ) : (
     <>
       <Header />

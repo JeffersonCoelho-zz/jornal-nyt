@@ -24,7 +24,7 @@ export const SimpleModal = ({ value }) => {
   const body = (
     <StyleModal elevation={3} variant={'outlined'} onClick={openNew}>
       <h2 id="simple-modal-title">{value?.title}</h2>
-      {imgSrc ? <img src={imgSrc} /> : <></>}
+      {imgSrc ? <img alt={''} src={imgSrc} /> : <></>}
       <p id="simple-modal-description">{value?.abstract}</p>
     </StyleModal>
   );
