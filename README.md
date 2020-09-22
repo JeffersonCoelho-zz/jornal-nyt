@@ -24,7 +24,6 @@
 This app features all the latest tools and practices in web development!
 
 - ⚛ **React** — A library to build user interfaces
-- ♻ **Redux with Redux Saga** — State management with middleware
 - 💅 **CSS** — styled-components
 - 💖 **Lint** — ESlint/Prettier/Editor Config
 
